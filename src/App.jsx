@@ -1,13 +1,15 @@
-import { Routes } from 'react-router-dom';
-import './App.css'
+import { Routes, Route } from 'react-router-dom'; // Add 'Route' to the import
+import './App.css';
 
 function App() {
-  return <div>
+  return (
+    <div>
       <Routes>
-          <Route  path="/" element={<Home />}/>
-          <Route  path="/room/:roomId" element={<Room />}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/room/:roomId" element={<Room />} />
       </Routes>
-    </div>;
+    </div>
+  );
 }
 
 export default App;
